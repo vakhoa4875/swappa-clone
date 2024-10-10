@@ -1,0 +1,142 @@
+<!-- body -->
+<main class="flex-shrink-0">
+    <div id="main_container" class="container">
+        <!-- content-top -->
+        <!-- tooltip-bar -->
+        <div id="tooltip-bar" class="row row-cols-2 row-cols-md-4 text-center mt-2">
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                    
+                <div class="card text-bg-light">
+                    <div class="card-header my-0 pb-0">
+                        <div class="card-title border-bottom fw-bolder">No hidden fee</div>
+                    </div>
+                    <div class="pt-0 card-body">Standard shipping is included in the listing price. You pay what you see.
+                    </div>
+                </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-dolly"></i> Free
+                    shipping</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Tech has to work</div>
+                        </div>
+                        <div class="pt-0 card-body">No broken screens, blocked phones, or scammers. We have strict condition requirements, and real people verify listings before they go live.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-ban"></i> No
+                    Junks, No Jerks</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">We’re here to help</div>
+                        </div>
+                        <div class="pt-0 card-body">Our support team typically responds in 20 minutes or less. Really!
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-envelope-open-text"></i>
+                    24/7/365 Supports</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Sell with confidence</div>
+                        </div>
+                        <div class="pt-0 card-body">We use PayPal for payments because they provide extensive buyer and seller protections. Get paid directly to your PayPal account as soon as your item sells.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-brands fa-paypal"></i>
+                    Paypal Protection</a>
+            </div>
+        </div>
+        <!-- breadcrumb-bar -->
+        <div id="breadcrumb-bar" class="mt-3" ng-if="false">
+
+            <nav aria-label="breadcrumb" style="background-color: rgb(245, 245, 245)" class="py-1 px-3 rounded ">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#!/" class="btn border-0 m-0 p-0 text-success">Home</a></li>
+                    <li class="breadcrumb-item" ng-if="(searchRes.name1 != null)">
+                        <a href="#!category/{{searchRes.name1}}"
+                        class="btn border-0 m-0 p-0 {{(searchRes.name1 != null && searchRes.name2 == null)?'disabled':'text-success'}}">{{searchRes.name1}}</a>
+                    </li>
+                    <li class="breadcrumb-item" ng-if="(searchRes.name2 != null)">
+                        <a href="#!category/{{searchRes.name1}}/{{searchRes.name2}}"
+                        class="btn border-0 m-0 p-0 {{(searchRes.name2 != null && searchRes.name3 == null)?'disabled':'text-success'}}">{{searchRes.name2}}</a>
+                    </li>
+                    <li class="breadcrumb-item" ng-if="(searchRes.name3 != null)">
+                        <a href="#!category/{{searchRes.name1}}/{{searchRes.name2}}/{{searchRes.name3}}"
+                        class="btn border-0 m-0 p-0 {{(searchRes.name3 != null && searchRes.name4 == null)?'disabled':'text-success'}}">{{searchRes.name3}}</a>
+                    </li>
+                    <li class="breadcrumb-item {{(searchRes.name4 != null)?'active':''}}" ng-if="(searchRes.name4 != null)">
+                        <a href="#!category/{{searchRes.name1}}/{{searchRes.name2}}/{{searchRes.name3}}/{{searchRes.name4}}"
+                        class=" btn border-0 m-0 p-0 {{(searchRes.name4 != null)?'disabled':'text-success'}}">{{searchRes.name4}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="message-block" class="text-center mt-3">
+            <div class="card border-0">
+                <ul class="justify-content-center d-flex flex-row gap-4">
+                    <li><a href="#" style="color: rgba(0, 79, 163, 0.996);"><i class="fa-brands fa-apple"></i>
+                            Buyer's Guides</a></li>
+                    <li><a href="#" style="color: rgb(0, 111, 0);"><i class="fa-solid fa-coins"></i> Sell Phones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <section class="mb-5 text-center">
+            </section> -->
+
+        <section></section>
+
+        <!-- product -->
+        <section>
+            <div class="mt-4">
+                <div class="d-flex align-items-baseline my-4">
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                    <div class="mx-4 mb-0 text-center h2"> Search Results </div>
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                </div>
+                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 justify-content-evenly">
+                    <div class="col mb-3" ng-repeat="ele in searchRes">
+                        <!-- <h1>{{ele.name1}}</h1>
+                        <h1>{{ele.name2}}</h1>
+                        <h1>{{ele.name3}}</h1> -->
+                        <div class="card text-center d-product justify-content-center p-2 pb-2">
+                            <a href="#!category/{{ele.name1}}/{{ele.name2}}/{{ele.name3}}" class="stretched-link"><img
+                                    src="assests/srcPic/{{ele.thumbnail}}" class="img-fluid mt-2 mb-3" alt=""></a>
+                            <span> {{ele.name}} </span>
+                            <div class="d-flex flex-row mt-2 justify-content-center" ng-hide="(ele.star==null)">
+                                <i ng-repeat="s in star"
+                                    class="{{(s <= ele.star) ? 'fa-solid fa-star' : (s - ele.star > 0 && s - ele.star < 1) ? 'fa-solid fa-star-half-stroke' : 'fa-regular fa-star'}}"
+                                    style="color: #ff7b00;"></i>
+                            </div>
+                            <div class="row row-cols-2 justify-content-between mt-3 price">
+                                <div class="col text-center d-flex flex-row gap-1">
+                                    <span style="color: green;">${{ele.curPrice}} </span>
+                                    <span ng-hide="ele.oriPrice == null"
+                                        style="text-decoration: line-through;">${{ele.oriPrice}}</span>
+                                </div>
+                                <div class="col text-end">
+                                    <i ng-hide="categories[0].logo==null" class="{{categories[0].logo}}"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#!category/{{ele.name1}}/{{ele.name2}}/{{ele.name3}}" class="text-success">Guides</a> ·
+                            <a href="#!category/{{ele.name1}}/{{ele.name2}}/{{ele.name3}}" class="text-success">Compare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" ng-if="searchRes.length == 0">
+                <img src="assests/srcPic/no-products.jpg" height="550px" alt="">
+            </div>
+        </section>
+    </div>
+</main>
+<!-- <img src="assests/srcPic/404.gif"> -->

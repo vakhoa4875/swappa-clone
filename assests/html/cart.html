@@ -1,0 +1,214 @@
+<div class="container-fluid bg-semiBlack">
+
+    <main class="flex-shrink-0">
+        <div class="container text-bg-light p-4 pb-2" style="background-color: white !important;">
+            <div id="tooltip-bar" class="row row-cols-2 row-cols-md-4 text-center mt-2">
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                    
+                <div class="card text-bg-light">
+                    <div class="card-header my-0 pb-0">
+                        <div class="card-title border-bottom fw-bolder">No hidden fee</div>
+                    </div>
+                    <div class="pt-0 card-body">Standard shipping is included in the listing price. You pay what you see.
+                    </div>
+                </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-dolly"></i> Free
+                        shipping</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Tech has to work</div>
+                        </div>
+                        <div class="pt-0 card-body">No broken screens, blocked phones, or scammers. We have strict condition requirements, and real people verify listings before they go live.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-ban"></i> No
+                        Junks, No Jerks</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">We’re here to help</div>
+                        </div>
+                        <div class="pt-0 card-body">Our support team typically responds in 20 minutes or less. Really!
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-envelope-open-text"></i>
+                        24/7/350 Supports</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Sell with confidence</div>
+                        </div>
+                        <div class="pt-0 card-body">We use PayPal for payments because they provide extensive buyer and seller protections. Get paid directly to your PayPal account as soon as your item sells.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-brands fa-paypal"></i>
+                        Paypal Protection</a>
+                </div>
+            </div>
+            <!-- breadcrumb-bar -->
+            <div id="breadcrumb-bar" class="mt-2 visually-hidden">
+
+                <nav aria-label="breadcrumb" style="background-color: rgb(245, 245, 245)" class="py-1 px-3 rounded ">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../index" class="text-success">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-success">Phones</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-success">Apple</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">iPhones</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="message-block" class="text-center mt-3 visually-hidden">
+                <h2>Apple iPhone 15 Pro Max <span class="text-secondary h4">Unlocked</span></h2>
+
+                <div class="d-flex text-center justify-content-center gap-3 flex-wrap">
+                    <span>Good</span>
+                    <span>512 GB</span>
+                    <span>Blue</span>
+                    <span>A289</span>
+                    <span style="color: #d78c00;"><i class="fa-solid fa-star" style="color: #d78c00;"></i>
+                        Featured</span>
+                    <span style="color: #25c21f;"><i class="fa-solid fa-check" style="color: #25c21f;"></i>
+                        Approved</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="text-center" ng-if="cartLen==0">
+                        <img src="assests/srcPic/empty-cart.png" alt="" class="">
+                    </div>
+                    <div class="table-responsive mt-4" ng-if="cartLen >= 1">
+                        <table class="table align-middle text-center">
+                            <tr class="border shadow-sm">
+                                <td>
+                                    <!-- <h1 ng-bind="isTickAll"></h1> -->
+                                    <input class="form-check-input" type="checkbox" ng-model="isTickAll"
+                                        ng-change="tickAll(isTickAll)" />
+                                </td>
+                                <td colspan="2">Product</td>
+                                <td>Code</td>
+                                <td class="text-end">Price</td>
+                                <td><button ng-click="clearCart()" class="btn btn-outline-danger"><i
+                                            class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                            <div id="seller-items" class="">
+                                <tr>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <!-- <div id="seller">
+                                <tr class="border table-success">
+                                    <td><input class="form-check-input" type="checkbox" value="" id="select-all" />
+                                    </td>
+                                    <td colspan="6" class="text-start ps-3"><a href="">The Cellular Resource</a>
+                                        <span class="badge rounded-pill text-black"
+                                            style="background-color: rgb(255, 229, 215);"><i class="fa-solid fa-award"
+                                                style="color: #dd2727;"></i> Trusted
+                                            Seller</span> <span class="badge rounded-pill text-black"
+                                            style="background-color: rgb(225, 255, 215);"><i
+                                                class="fa-solid fa-location-dot" style="color: #00bd16;"></i>
+                                            Raleigh, NC</span>
+                                    </td>
+                                </tr>
+                            </div> -->
+
+                                <tr ng-repeat="sp in cart">
+                                    <td><input class="form-check-input" type="checkbox" ng-model="sp.buy"
+                                            ng-change="countSelected()" />
+                                    </td>
+                                    <td>
+                                        <a href="#!/category/{{sp.name1}}/{{sp.name2}}/{{sp.name3}}/{{sp.name4}}">
+                                            <img src="assests/srcPic/{{sp.thumbnail}}" class="img-fluid"
+                                                style="max-height: 6vh; max-width: 4vw; margin: auto;" alt="">
+                                        </a>
+                                    </td>
+                                    <td> <span ng-bind="sp.name3"></span>
+                                        <span ng-bind="sp.color" class="badge rounded-pill text-bg-warning">Black</span>
+                                        <span ng-bind="sp.storage" class="badge rounded-pill text-bg-dark">64GB</span>
+                                    </td>
+                                    <td><a href="#!/category/{{sp.name1}}/{{sp.name2}}/{{sp.name3}}/{{sp.name4}}"
+                                            ng-bind="sp.code" class="text-success">LXNM56688</a></td>
+                                    <td class="text-end" ng-bind="sp.price | currency:'$':0">$377</td>
+                                    <td><button ng-click="delFromCart(sp.id)" class="btn btn-outline-danger"><i
+                                                class="fa-solid fa-trash-can"></i></button>
+                                    </td>
+                                </tr>
+                            </div>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mt-4 h5 fw-normal text-center border-0" ng-if="cartLen>=1">
+                        <div class="card-body text-bg-danger m-0 p-0 py-3 rounded">
+                            <div class="d-flex flex-row gap-2 align-items-center justify-content-center">
+                                <span id="item-count" ng-bind="itemsCount">6</span>items selected,<span id="total"
+                                    ng-bind="total | currency:'$':0">$377*6</span>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: white;">
+                            <a href=""
+                                class="btn {{itemsCount == 0?'disabled btn-outline-secondary':' btn-outline-success'}}"
+                                ng-click="buySelected()">Buy now</a>
+                        </div>
+                    </div>
+                    <div class="card fs-14 p-3 pb-0 text-bg-secondary mt-4 border-0">
+                        <p>Use the Cart to keep track of listings you want to buy.</p>
+
+                        <p>Remember, items in your cart can still be bought by other users.</p>
+
+                        <p>To buy a listing in your cart click on its Buy Now button.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product-list -->
+            <div class="mt-4">
+                <div class="d-flex align-items-baseline my-4">
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                    <div class="mx-4 mb-0 text-center h2">Recently Viewed</div>
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                </div>
+                <div div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 justify-content-around">
+                    <div class="col mb-3" ng-repeat="item in allItems | limitTo:5:0">
+                        <!-- <h1>{{item.name1}}</h1>
+                    <h1>{{item.name2}}</h1>
+                    <h1>{{item.name3}}</h1> -->
+                        <div class="card text-center d-product justify-content-center p-2 pb-2">
+                            <a href="#!category/{{item.name1}}/{{item.name2}}/{{item.name3}}"
+                                class="stretched-link"><img src="assests/srcPic/{{item.thumbnail}}"
+                                    class="img-fluid mt-2 mb-3" alt=""></a>
+                            <span> {{item.name}} </span>
+                            <div class="d-flex flex-row mt-2 justify-content-center" ng-hide="(item.star==null)">
+                                <i ng-repeat="s in star"
+                                    class="{{(s <= item.star) ? 'fa-solid fa-star' : (s - item.star > 0 && s - item.star < 1) ? 'fa-solid fa-star-half-stroke' : 'fa-regular fa-star'}}"
+                                    style="color: #ff7b00;"></i>
+                            </div>
+                            <div class="row row-cols-2 justify-content-between mt-3 price">
+                                <div class="col text-center d-flex flex-row gap-1">
+                                    <span style="color: green;">${{item.curPrice}} </span>
+                                    <span ng-hide="item.oriPrice == null"
+                                        style="text-decoration: line-through;">${{item.oriPrice}}</span>
+                                </div>
+                                <div class="col text-end">
+                                    <i ng-hide="categories[0].logo==null" class="{{categories[0].logo}}"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#!category/{{item.name1}}/{{item.name2}}/{{item.name3}}"
+                                class="text-success">Guides</a> ·
+                            <a href="#!category/{{item.name1}}/{{item.name2}}/{{item.name3}}"
+                                class="text-success">Compare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>

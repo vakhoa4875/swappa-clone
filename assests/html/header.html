@@ -1,0 +1,124 @@
+<!-- mobileNav -->
+<div class="d-block d-lg-none">
+    <div id="mobileNav"  style="background-color: rgb(18,17,13); color: rgb(231,227,223);" >
+        <nav class="navbar  navbar-expand-lg navbar-dark" aria-label="Mobile Navigation">
+            <div class="container-sm">
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#slide_menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a href="#" class="navbar-brand" title="Swappa">
+                    <img class="img-fluid"
+                        src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff_drop_e4611b.svg"
+                        alt="Swappa Logo">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#slide_search"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Search">
+                    <i class="fa-solid fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+</div>
+<!-- mainNav -->
+<div class="d-none d-lg-block">
+    <!-- first-nav -->
+    <div class="stNav" style="background-color: rgb(18,17,13); color: rgb(231,227,223);" >
+        <nav class="navbar navbar-expand-lg  navbar-dark">
+            <div class="container d-block">
+                <div class="d-flex gap-3">
+                    <ul class="navbar-nav" role="presentation">
+                        <li class="nav-item">
+                            <a class="navbar-brand d-block text-center pt-2" href="#">
+                                <img class="img-fluid"
+                                    src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff_drop_e4611b.svg"
+                                    width="167px" height="35px" alt="Bootstrap">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!404" class="nav-link">
+                                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex-grow-1">
+                        <form action="" class="d-flex align-items-center position-relative h-100"
+                            ng-submit="search(keyword, $event)">
+                            <!-- {{keyword}} -->
+                            <!-- <a ng-href="#!/searchResult" class="d-flex align-items-center position-relative h-100"> -->
+                            <input type="search" class="form-control rounded-0" id="navbar_search_input" name="q"
+                                ng-model="keyword" placeholder="Find a good deal" autocomplete="off">
+                            <!-- </a> -->
+                        </form>
+                    </div>
+                    <ul class="navbar-nav" role="presentation">
+                        <li class="nav-item">
+                            <a href="#!/help" class="nav-link">
+                                <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" ng-if="isLogin">
+                                <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu" style="left: 80%; margin: auto;" ng-if="isLogin">
+                                <li><a class="btn dropdown-item" href="#!/account/changePass">Change Password</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="btn dropdown-item" ng-click="logOut()">Log Out</a></li>
+                            </ul>
+                            <a href="#!/account" class="nav-link" ng-if="!isLogin">
+                                <i class="fa-regular fa-circle-user" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!/cart" class="nav-link position-relative">
+
+                                <i class="fa-solid fa-fw fa-shopping-cart" aria-hidden="true"></i>
+                                <span ng-bind="cartLen"
+                                    class="position-absolute top-0 start-100 translate-middle-x px-2 text-bg-cf badge rounded-pill">
+                                    1 <span class="visually-hidden">Cart Items</span>
+                                </span>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- second-nav -->
+    <div class="ndNav position-relative pb-2"  style="background-color: rgb(18,17,13); color: rgb(231,227,223);" >
+        <nav class="navbar navbar-expand-lg text-center bg-transparent pt-0 pb-0">
+            <div class="container-md">
+                <div class="m-auto justify-content-center">
+                    <div class="collapse navbar-collapse me-5 ms-5" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item dropdown" ng-repeat="tl in categories">
+                                <a class="nav-link dropdown-toggle text-white" href="#!/category/{{tl.name}}"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{tl.name}}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#!/category/{{tl.name}}/{{con.name}}"
+                                            ng-repeat="con in categories[$index].child"> {{con.name}} </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#!/category/{{tl.name}}"><i
+                                                class="fa-solid fa-arrow-right text-dark fs-14"></i> All
+                                            {{tl.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

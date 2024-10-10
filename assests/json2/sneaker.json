@@ -1,0 +1,1237 @@
+{
+    "findItemsByKeywordsResponse": [
+        {
+            "ack": [
+                "Success"
+            ],
+            "version": [
+                "1.13.0"
+            ],
+            "timestamp": [
+                "2024-01-25T13:56:08.644Z"
+            ],
+            "searchResult": [
+                {
+                    "@count": "8",
+                    "item": [
+                        {
+                            "itemId": [
+                                "155901771487"
+                            ],
+                            "title": [
+                                "NMD_R1 Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "subtitle": [
+                                "Order by 12\/15 for Christmas Delivery"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/cS8AAOSwuD1lXObA\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/NMD-R1-Shoes-\/155901771487?var=456293755848"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "postalCode": [
+                                "293**"
+                            ],
+                            "location": [
+                                "Spartanburg,SC,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "68.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "68.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P27DT3H18M51S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-11-21T17:14:59.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-21T17:14:59.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "9"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "150.0"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "155850364085"
+                            ],
+                            "title": [
+                                "Superstar Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "subtitle": [
+                                "Order by 12\/15 for Christmas Delivery"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/aTMAAOSwvydlqAHf\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Superstar-Shoes-\/155850364085?var=0"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "postalCode": [
+                                "293**"
+                            ],
+                            "location": [
+                                "Spartanburg,SC,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "70.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "70.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P0DT5H48M36S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-10-25T18:44:44.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-01-25T19:44:44.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "963"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "196063717420"
+                            ],
+                            "title": [
+                                "New Balance Men's Fresh Foam Roav"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "subtitle": [
+                                "The Official New Balance Outlet Store - Fast Shipping"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/J1QAAOSwCL5lTkfu\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/New-Balance-Mens-Fresh-Foam-Roav-\/196063717420?var=495935328238"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "47.24"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "47.24"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P9DT5H9M32S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-11-03T18:05:40.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-03T19:05:40.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "12"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "84.99"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "195835179178"
+                            ],
+                            "title": [
+                                "New Balance Men's DynaSoft Nitrel v5"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "subtitle": [
+                                "The Official New Balance Outlet Store - Fast Shipping"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/GqUAAOSwdJ9k0RXG\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/New-Balance-Mens-DynaSoft-Nitrel-v5-\/195835179178?var=495758993152"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "47.24"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "47.24"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P26DT23H30M54S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-06-21T12:27:02.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-21T13:27:02.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "160"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "74.99"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "275296794239"
+                            ],
+                            "title": [
+                                "PUMA Men's Viz Runner Repeat Running Sneakers"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/hDwAAOSw-CxjEPN9\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/PUMA-Mens-Viz-Runner-Repeat-Running-Sneakers-\/275296794239?var=576108480407"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "true"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "32.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "32.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P8DT3H32M24S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2022-05-02T16:28:32.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-02T17:28:32.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "74"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.0"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "274842925513"
+                            ],
+                            "title": [
+                                "PUMA Men's Axelion NXT Running Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/M~YAAOSwbPZix2Ll\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/PUMA-Mens-Axelion-NXT-Running-Shoes-\/274842925513?var=576496332064"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "true"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "36.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "36.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P28DT18H51M31S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2021-06-23T07:47:39.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-23T08:47:39.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "30"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "80.0"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "155711347279"
+                            ],
+                            "title": [
+                                "Lite Racer Adapt 6.0 Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "subtitle": [
+                                "Order by 12\/15 for Christmas Delivery"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/laYAAOSwHGpk09tB\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Lite-Racer-Adapt-6-0-Shoes-\/155711347279?var=456099205517"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "postalCode": [
+                                "293**"
+                            ],
+                            "location": [
+                                "Spartanburg,SC,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "63.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "63.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P15DT5H30M47S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-08-09T18:26:55.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-09T19:26:55.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "8"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "70.0"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "175760332416"
+                            ],
+                            "title": [
+                                "Reebok Flexagon Force 3 Wide 4E Men's Training Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "secondaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "158952"
+                                    ],
+                                    "categoryName": [
+                                        "Men's Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/i.ebayimg.com\/thumbs\/images\/g\/W24AAOSwu5Rkf1TQ\/s-l140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Reebok-Flexagon-Force-3-Wide-4E-Mens-Training-Shoes-\/175760332416?var=475158412838"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "45.5"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "45.5"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "timeLeft": [
+                                        "P12DT2H49M42S"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2023-06-06T15:45:50.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2024-02-06T16:45:50.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "262"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "New with box"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "true"
+                            ],
+                            "discountPriceInfo": [
+                                {
+                                    "originalRetailPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.0"
+                                        }
+                                    ],
+                                    "pricingTreatment": [
+                                        "STP"
+                                    ],
+                                    "soldOnEbay": [
+                                        "false"
+                                    ],
+                                    "soldOffEbay": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "paginationOutput": [
+                {
+                    "pageNumber": [
+                        "1"
+                    ],
+                    "entriesPerPage": [
+                        "100"
+                    ],
+                    "totalPages": [
+                        "112274"
+                    ],
+                    "totalEntries": [
+                        "11227333"
+                    ]
+                }
+            ],
+            "itemSearchURL": [
+                "https:\/\/www.ebay.com\/sch\/i.html?_nkw=sneaker&_ddo=1&_ipg=100&_pgn=1"
+            ]
+        }
+    ]
+}

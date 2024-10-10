@@ -1,0 +1,313 @@
+ng-view {
+    min-height: 65vh;
+    background-color: white;
+}
+
+.invalid-input {
+    outline: 2px solid red;
+}
+
+body {
+    font-family: "Garamond";
+    /* Use Playfair Display if available, otherwise fall back to a serif font */
+}
+
+.valid-input {
+    outline: 2px solid green;
+}
+
+.text-bg-dark::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.loading-screen {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity ease-in-out 0.5s;
+}
+
+.loading-screen.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+/* .stNav .navbar,
+#mobileNav .navbar,
+.ndNav .navbar,
+footer {
+    background-image: url(https://static.swappa.com/static/images/holidays/navbar_snowflakes_200x67.svg);
+    background-repeat: repeat;
+    background-size: 200px;
+} */
+
+header i {
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+header i:hover {
+    color: rgb(83, 77, 0);
+}
+
+.bg-info {
+    background-color: #3663c2 !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-tabs>li>a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#mobileNav .navbar-toggler {
+    border: none;
+}
+
+.card_home_category .big_image {
+    display: block;
+    padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.card-header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.bgg-cf-100 {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(231, 227, 223));
+}
+
+.bgg-cf-0 {
+    background-image: linear-gradient(rgb(231, 227, 223), rgb(255, 255, 255));
+}
+
+.bgg-orange-100 {
+    background-image: linear-gradient(rgb(33, 37, 41), rgb(52, 32, 0));
+}
+
+.bgg-indigo-100 {
+    background-image: linear-gradient(rgb(33, 37, 41), rgb(0, 35, 52));
+}
+
+.bgg-red-100 {
+    background-image: linear-gradient(rgb(33, 37, 41), rgb(52, 2, 0));
+}
+
+.bgg-yellow-100 {
+    background-image: linear-gradient(rgb(33, 37, 41), rgb(52, 47, 0));
+}
+
+.bgg-purple-100 {
+    background-image: linear-gradient(rgb(33, 37, 41), rgb(23, 0, 52));
+}
+
+.card_home_category .med_image img {
+    max-height: 150px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.boder-semiBlack {
+    border: 1px solid rgb(18, 17, 13);
+}
+
+.bg-semiBlack {
+    background-color: rgb(18, 17, 13) !important;
+}
+
+.text-semiBlack {
+    color: rgb(18, 17, 13) !important;
+}
+
+.bg-cf {
+    background-color: rgb(231, 227, 223) !important;
+}
+
+.text-cf {
+    color: rgb(231, 227, 223) !important;
+}
+
+.text-bg-semiBlack {
+    background-color: rgb(18, 17, 13) !important;
+    color: rgb(231, 227, 223) !important;
+}
+
+.text-bg-cf {
+    background-color: rgb(231, 227, 223) !important;
+    color: rgb(18, 17, 13) !important;
+}
+
+#brand-swappa img {
+    max-height: 50px;
+    margin: auto;
+}
+
+footer img {
+    max-height: 40px;
+    margin: auto;
+}
+
+.d-product img {
+    max-height: 150px;
+    margin: auto;
+}
+
+.price img {
+    max-height: 17px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+banner img {
+    max-height: 50px;
+    margin: auto;
+}
+
+footer i {
+    height: 50px;
+    margin: auto;
+}
+
+#tooltip-bar .text-primary {
+    color: #052467 !IMPORTANT;
+    font-weight: bolder;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}
+
+#breadcrumb-bar ul {
+    margin-bottom: 0;
+}
+
+.hori-stripe-pattern-warm {
+    height: 16px;
+    border-top: 4px solid rgb(100, 99, 86);
+    border-bottom: 8px solid rgb(116, 114, 100);
+}
+
+.stripe {
+    height: 4px;
+    background-color: rgb(0, 64, 99);
+}
+
+#product-detail .card {
+    background-color: #f3f3f3;
+}
+
+.modal-body td {
+    color: rgb(99, 99, 99);
+    margin: 0;
+    padding: 0;
+    padding-block: 4px;
+}
+
+.modal-body td a {
+    color: rgb(0, 84, 4);
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body {
+    font-size: 14px;
+}
+
+#item-img img {
+    height: 60vh;
+
+    margin: auto;
+}
+
+#seller-items img {
+    height: 10vh;
+    margin: auto;
+}
+
+.paypal * {
+    font-size: 11px;
+}
+
+.text-bg-info {
+    background-color: #7cf3f1 !IMPORTANT;
+}
+
+.small-ul li {
+    font-size: 16px;
+}
+
+.md-ul li {
+    font-size: 16px;
+}
+
+.sm-img {
+    height: 50px;
+    margin: auto;
+}
+
+.border-start {
+    border-left: 5px solid rgb(77, 163, 138) !important;
+    border-radius: 5px;
+    color: grey;
+}
+
+.fs-18 * {
+    font-size: 18px !important;
+}
+
+.fs-14 *,
+.fs-14 {
+    font-size: 14px !important;
+}
+
+#discussion-section img {
+    height: 40px;
+    margin: auto;
+}
+
+/* */
+
+.small {
+    text-align: start;
+}
+
+.icons {
+    height: 25px;
+    margin: auto;
+}

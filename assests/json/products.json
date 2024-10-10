@@ -1,0 +1,285 @@
+[
+    {
+        "name": "apple",
+        "products": [
+            {
+                "name": "iPhones",
+                "products": [
+                    {
+                        "id": 1,
+                        "name": "iPhone 15 Pro Max",
+                        "curPrice": 939,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "iPhone15ProMax.webp"
+                    },
+                    {
+                        "id": 2,
+                        "name": "iPhone 15 Pro",
+                        "curPrice": 810,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "iPhone15Pro.webp"
+                    },
+                    {
+                        "id": 3,
+                        "name": "iPhone 15",
+                        "curPrice": 599,
+                        "oriPrice": null,
+                        "star": 3.5,
+                        "thumbnail": "iPhone15.webp"
+                    },
+                    {
+                        "id": 4,
+                        "name": "iPhone 15 Plus",
+                        "curPrice": 695,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "iPhone15Plus.webp"
+                    },
+                    {
+                        "id": 5,
+                        "name": "iPhone 14 Plus",
+                        "curPrice": 422,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "iPhone14Plus.webp"
+                    },
+                    {
+                        "id": 6,
+                        "name": "iPhone 14 Pro",
+                        "curPrice": 609,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "iPhone14Pro.webp"
+                    }
+                ]
+            },
+            {
+                "name": "MacBooks",
+                "products": [
+                    {
+                        "id": 7,
+                        "name": "MacBook Pro 2023 - 16\"",
+                        "curPrice": 1751,
+                        "oriPrice": null,
+                        "star": 2.9,
+                        "thumbnail": "MacBookPro202316inch.webp"
+                    },
+                    {
+                        "id": 8,
+                        "name": "MacBook Air 2023-15\"",
+                        "curPrice": 947,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "MacBook2.webp"
+                    },
+                    {
+                        "id": 9,
+                        "name": "MacBook Pro 2023-14\"",
+                        "curPrice": 1390,
+                        "oriPrice": null,
+                        "star": 5,
+                        "thumbnail": "mac3.webp"
+                    },
+                    {
+                        "id": 10,
+                        "name": "MacBook Pro Late 2023 (M3)-14\"",
+                        "curPrice": 1467,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "mac4.webp"
+                    },
+                    {
+                        "id": 11,
+                        "name": "MacBook Pro Late 2023 (M3)-16\"",
+                        "curPrice": 2449,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "mac5.webp"
+                    }
+                ]
+            },
+            {
+                "name": "iPads",
+                "products": [
+                    {
+                        "id": 12,
+                        "name": "iPad 10th Gen",
+                        "curPrice": 339,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pad1.webp"
+                    },
+                    {
+                        "id": 13,
+                        "name": "iPad 9th Gen",
+                        "curPrice": 218,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pad2.webp"
+                    },
+                    {
+                        "id": 14,
+                        "name": "iPad 8th Gen",
+                        "curPrice": 154,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pad3.webp"
+                    },
+                    {
+                        "id": 15,
+                        "name": "iPad 7th Gen",
+                        "curPrice": 154,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pad4.webp"
+                    },
+                    {
+                        "id": 16,
+                        "name": "iPad Pro 12.9\" 6th Gen",
+                        "curPrice": 751,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pad5.webp"
+                    }
+                ]
+            },
+            {
+                "name": "Apple Watch",
+                "products": [
+                    {
+                        "id": 17,
+                        "name": "Watch Series 9 45mm",
+                        "curPrice": 267,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "watch1.webp"
+                    },
+                    {
+                        "id": 18,
+                        "name": "Watch Series 9 41mm",
+                        "curPrice": 262,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "watch2.webp"
+                    },
+                    {
+                        "id": 19,
+                        "name": "Watch Series 8 41mm",
+                        "curPrice": 185,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "watch3.webp"
+                    },
+                    {
+                        "id": 20,
+                        "name": "Watch Series 8 45mm",
+                        "curPrice": 226,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "watch4.webp"
+                    },
+                    {
+                        "id": 21,
+                        "name": "Watch Series 7 45mm",
+                        "curPrice": 180,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "watch5.webp"
+                    }
+                ]
+            },
+            {
+                "name": "AirPods",
+                "products": [
+                    {
+                        "id": 22,
+                        "name": "AirPods Pro 2nd Gen",
+                        "curPrice": 149,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pod1.webp"
+                    },
+                    {
+                        "id": 23,
+                        "name": "AirPods Max",
+                        "curPrice": 226,
+                        "oriPrice": null,
+                        "star": 3.9,
+                        "thumbnail": "pod2.webp"
+                    },
+                    {
+                        "id": 24,
+                        "name": "AirPods 3rd Gen",
+                        "curPrice": 103,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pod3.webp"
+                    },
+                    {
+                        "id": 25,
+                        "name": "AirPods Pro 1st Gen",
+                        "curPrice": 105,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "pod4.webp"
+                    },
+                    {
+                        "id": 26,
+                        "name": "AirPods 2nd Gen",
+                        "curPrice": 53,
+                        "oriPrice": null,
+                        "star": 1.1,
+                        "thumbnail": "pod5.webp"
+                    }
+                ]
+            },
+            {
+                "name": "iMacs",
+                "products": [
+                    {
+                        "id": 27,
+                        "name": "iMac 2019 27\" Retina 5K",
+                        "curPrice": 639,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "imac1.webp"
+                    },
+                    {
+                        "id": 28,
+                        "name": "iMac 2021 24\"",
+                        "curPrice": 927,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "imac2.webp"
+                    },
+                    {
+                        "id": 29,
+                        "name": "iMac 2020 27\" Retina 5K",
+                        "curPrice": 772,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "imac3.webp"
+                    },
+                    {
+                        "id": 30,
+                        "name": "iMac 2015 27\" Retina 5K",
+                        "curPrice": 535,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "imac4.webp"
+                    },
+                    {
+                        "id": 31,
+                        "name": "iMac 2017 21.5\" Retina 4K",
+                        "curPrice": 412,
+                        "oriPrice": null,
+                        "star": null,
+                        "thumbnail": "imac5.webp"
+                    }
+                ]
+            }
+        ]
+    }
+]

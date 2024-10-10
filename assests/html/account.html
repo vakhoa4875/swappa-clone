@@ -1,0 +1,210 @@
+<div style="background-image: url('assests/images/1323882.png');background-attachment: fixed;" class="">
+    <!-- body -->
+    <main class="container my-5">
+        <!-- Section: Design Block -->
+        <div class="row">
+
+            <section class="text-center col-lg-6">
+
+                <div class="card shadow-5-strong" style="
+          background: hsla(0, 0%, 0%, 0.5);
+          backdrop-filter: blur(15px);
+          ">
+                    <div class="card-body py-5 px-md-5 pb-2">
+
+                        <div class="justify-content-center">
+                            <div class="">
+                                <h2 class="fw-bold mb-5 text-white">LOGIN</h2>
+                                <form name="formLogIn" ng-submit="login()" class="text-white">
+                                    <div ng-hide="status == null" class="alert text-bg-dark"
+                                        ng-class="{'text-danger invalid-input':(status !== 1), 'text-success valid-input': (status === 1)}">
+                                        {{textStatus}}</div>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input autofocus type="email" id="email" name="email"
+                                            class="text-bg-dark form-control" placeholder="Email address"
+                                            ng-blur="emailBlurred = true" required
+                                            ng-class="{'invalid-input border-0':isInvalidEmail()}" ng-model="email" />
+                                        <div class="mt-1 text-danger fs-14 text-start" ng-show="isInvalidEmail()">
+                                            <i class="fa-solid fa-circle-info"></i> Invalid email. Example:
+                                            example@gmail.com
+                                        </div>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <div class="input-group">
+                                            <input type="{{(showPass)?'text':'password'}}" id="password" name="password"
+                                                class="text-bg-dark form-control" placeholder="Password"
+                                                ng-blur="passwordBlurred = true" required
+                                                ng-class="{'invalid-input border-0':isInvalidPassword()}"
+                                                ng-model="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,30}$" />
+                                            <span class="input-group-text"><button type="button"
+                                                    class="btn border-0 m-0 p-0" ng-mousedown="showPass = true" ng-mouseup="showPass = false"><i
+                                                        class="fa-solid {{(showPass)?'fa-eye':'fa-eye-slash'}}"></i></button></span>
+                                        </div>
+
+                                        <div class="mt-1 text-danger fs-14 text-start" ng-show="isInvalidPassword()">
+                                            <i class="fa-solid fa-circle-info"></i> Invalid password. Make
+                                            sure it's containing at least 6 characters (max:30) a uppercase
+                                            letter, lowercase letter and number.
+                                        </div>
+                                    </div>
+
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                        <input class="form-check-input text-bg-success me-2" type="checkbox" value=""
+                                            id="remmemberme" checked />
+                                        <label class="form-check-label" for="remmemberme">
+                                            Remember me?
+                                        </label>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-outline-success btn-block px-5 mb-4 rounded-5">
+                                        Login
+                                    </button>
+
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                        <p>or sign in with:</p>
+                                        <button type="button" class="btn text-success btn-floating mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </button>
+
+                                        <button type="button" class="btn text-success btn-floating mx-1">
+                                            <i class="fab fa-google"></i>
+                                        </button>
+
+                                        <button type="button" class="btn text-success btn-floating mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </button>
+
+                                        <button type="button" class="btn text-success btn-floating mx-1">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="d-lg-none mb-4 d-sm-block">
+            <section class="text-center col-lg-6">
+
+                <div class="card shadow-5-strong" style="
+          background: hsla(0, 0%, 0%, 0.5);
+          backdrop-filter: blur(15px);
+          ">
+                    <div class="card-body py-5">
+
+                        <div class="d-flex justify-content-center">
+                            <div class="">
+                                <h2 class="fw-bold mb-5 text-white">SIGN UP</h2>
+                                <form name="formSignUp" class="text-white" ng-submit="signUp()">
+                                    <div ng-hide="status2 == null" class="alert text-bg-dark"
+                                        ng-class="{'text-danger invalid-input':(status2 !== true), 'text-success valid-input': (status2 === true)}">
+                                        {{textStatus2}}</div>
+                                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input required ng-model="firstName" ng-blur="firstNameBlurred = true"
+                                                    type="text" id="firstName" name="firstName"
+                                                    class="form-control text-bg-dark" placeholder="First name"
+                                                    ng-class="{'invalid-input border-0': isInvalidFirstName()}" />
+                                            </div>
+                                            <div class="mt-1 text-danger fs-14 text-start"
+                                                ng-show="isInvalidFirstName()">
+                                                <i class="fa-solid fa-circle-info"></i> Invalid first name. Make
+                                                sure it's written correctly.
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="lastName" name="lastName"
+                                                    class="form-control text-bg-dark" placeholder="Last name" required
+                                                    ng-model="lastName" ng-blur="lastNameBlurred = true"
+                                                    ng-class="{'invalid-input border-0' : isInvalidLastName()}" />
+                                            </div>
+                                            <div class="mt-1 text-danger fs-14 text-start"
+                                                ng-show="isInvalidLastName()">
+                                                <i class="fa-solid fa-circle-info"></i> Invalid last name. Make
+                                                sure it's written correctly.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="email2" name="email2" class="form-control text-bg-dark"
+                                            placeholder="Email address" required ng-model="email2"
+                                            ng-blur="email2Blurred = true"
+                                            ng-class="{'invalid-input border-0' : isInvalidEmail2()}" />
+                                        <div class="mt-1 text-danger fs-14 text-start" ng-show="isInvalidEmail2()">
+                                            <i class="fa-solid fa-circle-info"></i> Invalid email. Make
+                                            sure it's written correctly.
+                                        </div>
+                                    </div>
+                                    <div></div>
+
+                                    <div class="row row-cols-md-2">
+                                        <div class="col">
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="password21" name="password21"
+                                                    class="form-control text-bg-dark" placeholder="Password"
+                                                    ng-model="password21" ng-blur="password21Blurred = true"
+                                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,30}$" required
+                                                    ng-class="{'invalid-input border-0':isInvalidPassword21()}" />
+                                                <div class="mt-1 text-danger fs-14 text-start"
+                                                    ng-show="isInvalidPassword21()">
+                                                    <i class="fa-solid fa-circle-info"></i> Invalid password. Make
+                                                    sure it's containing at least 6 characters (max:30) a uppercase
+                                                    letter, lowercase letter and number.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="password22" name="password22"
+                                                    class="form-control text-bg-dark" placeholder="Confirm Password"
+                                                    ng-model="password22" ng-blur="password22Blurred = true"
+                                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,30}$" required
+                                                    ng-class="{'invalid-input border-0':isInvalidPassword22()}" />
+                                                <div class="mt-1 text-danger fs-14 text-start"
+                                                    ng-show="isInvalidPassword22()">
+                                                    <i class="fa-solid fa-circle-info"></i> The confirm password isn't
+                                                    matched. Make
+                                                    sure it's written correctly.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                        <input class="form-check-input me-2 text-bg-success" type="checkbox" value=""
+                                            id="form2Example33" checked />
+                                        <label class="form-check-label" for="form2Example33">
+                                            Subscribe to our newsletter
+                                        </label>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-outline-success btn-block px-5 rounded-5">
+                                        Sign up
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Section: Design Block -->
+    </main>
+
+</div>

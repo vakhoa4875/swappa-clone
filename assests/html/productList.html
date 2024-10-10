@@ -1,0 +1,197 @@
+<!-- body -->
+<div class="container-fluid bg-semiBlack">
+<main class="flex-shrink-0">
+    <div id="main_container" class="container text-bg-cf p-4 pb-2">
+    <!-- content-top -->
+        <!-- tooltip-bar -->
+        <div id="tooltip-bar" class="row row-cols-2 row-cols-md-4 text-center">
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                    
+                <div class="card text-bg-light">
+                    <div class="card-header my-0 pb-0">
+                        <div class="card-title border-bottom fw-bolder">No hidden fee</div>
+                    </div>
+                    <div class="pt-0 card-body">Standard shipping is included in the listing price. You pay what you see.
+                    </div>
+                </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-dolly"></i> Free
+                    shipping</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Tech has to work</div>
+                        </div>
+                        <div class="pt-0 card-body">No broken screens, blocked phones, or scammers. We have strict condition requirements, and real people verify listings before they go live.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-ban"></i> No
+                    Junks, No Jerks</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">We’re here to help</div>
+                        </div>
+                        <div class="pt-0 card-body">Our support team typically responds in 20 minutes or less. Really!
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-solid fa-envelope-open-text"></i>
+                    24/7/365 Supports</a>
+            </div>
+            <div class="col">
+                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Sell with confidence</div>
+                        </div>
+                        <div class="pt-0 card-body">We use PayPal for payments because they provide extensive buyer and seller protections. Get paid directly to your PayPal account as soon as your item sells.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                        class="fa-brands fa-paypal"></i>
+                    Paypal Protection</a>
+            </div>
+        </div>
+        <!-- breadcrumb-bar -->
+        <div id="breadcrumb-bar" class="mt-3">
+
+            <nav aria-label="breadcrumb" style="background-color: rgb(245, 245, 245)" class="py-1 px-3 rounded ">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#!/" class="btn border-0 m-0 p-0 text-success">Home</a></li>
+                    <li class="breadcrumb-item" ng-if="(name != null)">
+                        <a href="#!category/{{name}}"
+                        class="btn border-0 m-0 p-0 {{(name != null && child == null)?'disabled':'text-success'}}">{{name}}</a>
+                    </li>
+                    <li class="breadcrumb-item" ng-if="(child != null)">
+                        <a href="#!category/{{name}}/{{child}}"
+                        class="btn border-0 m-0 p-0 {{(child != null && product == null)?'disabled':'text-success'}}">{{child}}</a>
+                    </li>
+                    <li class="breadcrumb-item" ng-if="(product != null)">
+                        <a href="#!category/{{name}}/{{child}}/{{product}}"
+                        class="btn border-0 m-0 p-0 {{(product != null && prod.code == null)?'disabled':'text-success'}}">{{product}}</a>
+                    </li>
+                    <li class="breadcrumb-item {{(prod.code != null)?'active':''}}" ng-if="(prod.code != null)">
+                        <a href="#!category/{{name}}/{{child}}/{{product}}/{{prod.code}}"
+                        class=" btn border-0 m-0 p-0 {{(prod.code != null)?'disabled':'text-success'}}">{{prod.code}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="message-block" class="text-center mt-3">
+            <h3>Apple Refurbished</h3>
+            <p>Great deals on used and refurbished Apple products.</p>
+            <div class="card border-0 text-bg-cf">
+                <ul class="justify-content-center d-flex flex-row gap-4">
+                    <li><a href="#" style="color: rgba(0, 79, 163, 0.996);"><i class="fa-brands fa-apple"></i>
+                            Buyer's Guides</a></li>
+                    <li><a href="#" style="color: rgb(0, 111, 0);"><i class="fa-solid fa-coins"></i> Sell Phones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- product -->
+        <section>
+            <!-- product-list -->
+            <div class="mt-4" ng-repeat="element in series | limitTo:6:0" ng-if="(child==null)">
+                <div class="d-flex align-items-baseline my-4">
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                    <div class="mx-4 mb-0 text-center h2"> {{element.name}} </div>
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                </div>
+                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 justify-content-evenly">
+                    <div class="col mb-3" ng-repeat="ele in element.series | limitTo:5:0">
+                        <div class="card rounded-0 border-0 text-center d-product justify-content-center p-2 pb-2 bgg-cf-0">
+                            <a href="#!category/{{name}}/{{element.name}}/{{ele.name}}" class="stretched-link"><img
+                                    src="assests/srcPic/{{ele.thumbnail}}" class="img-fluid mt-2 mb-3" alt=""></a>
+                            <span> {{ele.name}} </span>
+                            <div class="d-flex flex-row mt-2 justify-content-center" ng-hide="(ele.star==null)">
+                                <i ng-repeat="s in star"
+                                    class="{{(s <= ele.star) ? 'fa-solid fa-star' : (s - ele.star > 0 && s - ele.star < 1) ? 'fa-solid fa-star-half-stroke' : 'fa-regular fa-star'}}"
+                                    style="color: #ff7b00;"></i>
+                            </div>
+                            <div class="row row-cols-2 justify-content-between mt-3 price">
+                                <div class="col text-center d-flex flex-row gap-1">
+                                    <span style="color: green;">${{ele.curPrice}} </span>
+                                    <span ng-hide="ele.oriPrice == null"
+                                        style="text-decoration: line-through;">${{ele.oriPrice}}</span>
+                                </div>
+                                <div class="col text-end">
+                                    <i ng-hide="categories[0].logo==null" class="{{categories[0].logo}}"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#!category/{{name}}/{{element.name}}/{{ele.name}}" class="text-semiBlack">Guides</a>
+                            ·
+                            <a href="#!category/{{name}}/{{element.name}}/{{ele.name}}" class="text-semiBlack">Compare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" ng-if="(child!=null)">
+                <div class="d-flex align-items-baseline my-4">
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                    <div class="mx-4 mb-0 text-center h2"> {{child}} </div>
+                    <div class="flex-fill hori-stripe-pattern-warm"></div>
+                </div>
+                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 justify-content-evenly">
+                    <div class="col mb-3" ng-repeat="ele in allItems | filter : {name1: name, name2: child}">
+                        <div class="card rounded-0 border-0 text-center d-product justify-content-center p-2 pb-2">
+                            <a href="#!category/{{name}}/{{child}}/{{ele.name}}" class="stretched-link"><img
+                                    src="assests/srcPic/{{ele.thumbnail}}" class="img-fluid mt-2 mb-3" alt=""></a>
+                            <span> {{ele.name}} </span>
+                            <div class="d-flex flex-row mt-2 justify-content-center" ng-hide="(ele.star==null)">
+                                <i ng-repeat="s in star"
+                                    class="{{(s <= ele.star) ? 'fa-solid fa-star' : (s - ele.star > 0 && s - ele.star < 1) ? 'fa-solid fa-star-half-stroke' : 'fa-regular fa-star'}}"
+                                    style="color: #ff7b00;"></i>
+                            </div>
+                            <div class="row row-cols-2 justify-content-between mt-3 price">
+                                <div class="col text-center d-flex flex-row gap-1">
+                                    <span style="color: green;">${{ele.curPrice}} </span>
+                                    <span ng-hide="ele.oriPrice == null"
+                                        style="text-decoration: line-through;">${{ele.oriPrice}}</span>
+                                </div>
+                                <div class="col text-end">
+                                    <i ng-hide="categories[0].logo==null" class="{{categories[0].logo}}"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#!category/{{name}}/{{child}}/{{ele.name}}" class="text-semiBlack">Guides</a> ·
+                            <a href="#!category/{{name}}/{{child}}/{{ele.name}}" class="text-semiBlack">Compare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-4">
+                <div class="card border-0 text-center" style="background-color: rgb(228, 228, 228);">
+                    <h3 class="text-center pt-2">iPhone Prices in January 2024</h3>
+                    <p>Buy used to get the best price. Current iPhone 15 prices start at $649 as of January 2024.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mt-3">
+                <div class="col">
+                    <h4>How can I get a cheap iPhone?</h4>
+                    <p>Cheap iPhones start at $23 and can cost as much as $2060 for newer models in better condition
+                        with more storage. Buy cheap iPhones directly from other users to get the best prices.
+                        Swappa makes it safe and easy to shop used and refurbished Apple iPhones for sale.</p>
+                </div>
+                <div class="col">
+                    <h4>When will iPhone prices drop?</h4>
+                    <p>Unlike seasonal iPhone sales, used iPhone prices decline steadily over time. This means you
+                        can always get an iPhone cheap, no matter when you buy. New iPhones, sold at the Apple Store
+                        and other retailers, usually see a price drop when the next model is announced.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+    
+</div>

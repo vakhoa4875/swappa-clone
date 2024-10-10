@@ -1,0 +1,595 @@
+<!-- body -->
+<div class="container-fluid bg-semiBlack">
+    <main class="flex-shrink-0">
+        <div id="main_container" class="container text-bg-cf p-4 pb-2">
+            <!-- content-top -->
+            <!-- tooltip-bar -->
+            <div id="tooltip-bar" class="row row-cols-2 row-cols-md-4 text-center">
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                    
+                <div class="card text-bg-light">
+                    <div class="card-header my-0 pb-0">
+                        <div class="card-title border-bottom fw-bolder">No hidden fee</div>
+                    </div>
+                    <div class="pt-0 card-body">Standard shipping is included in the listing price. You pay what you see.
+                    </div>
+                </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-dolly"></i> Free
+                        shipping</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Tech has to work</div>
+                        </div>
+                        <div class="pt-0 card-body">No broken screens, blocked phones, or scammers. We have strict condition requirements, and real people verify listings before they go live.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-ban"></i> No
+                        Junks, No Jerks</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">We’re here to help</div>
+                        </div>
+                        <div class="pt-0 card-body">Our support team typically responds in 20 minutes or less. Really!
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-solid fa-envelope-open-text"></i>
+                        24/7/365 Supports</a>
+                </div>
+                <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title='                   
+                    <div class="card text-bg-light">
+                        <div class="card-header my-0 pb-0">
+                            <div class="card-title border-bottom fw-bolder">Sell with confidence</div>
+                        </div>
+                        <div class="pt-0 card-body">We use PayPal for payments because they provide extensive buyer and seller protections. Get paid directly to your PayPal account as soon as your item sells.
+                        </div>
+                    </div>' data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" class="text-primary"><i
+                            class="fa-brands fa-paypal"></i>
+                        Paypal Protection</a>
+                </div>
+            </div>
+            <!-- breadcrumb-bar -->
+            <div id="breadcrumb-bar" class="mt-3">
+
+                <nav aria-label="breadcrumb" style="background-color: rgb(245, 245, 245)" class="py-1 px-3 rounded ">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#!/" class="btn border-0 m-0 p-0 text-success">Home</a>
+                        </li>
+                        <li class="breadcrumb-item" ng-if="(name0 != null)">
+                            <a href="#!category/{{name0}}"
+                                class="btn border-0 m-0 p-0 {{(name0 != null && child == null)?'disabled':'text-success'}}">{{name0}}</a>
+                        </li>
+                        <li class="breadcrumb-item" ng-if="(child != null)">
+                            <a href="#!category/{{name0}}/{{child}}"
+                                class="btn border-0 m-0 p-0 {{(child != null && product == null)?'disabled':'text-success'}}">{{child}}</a>
+                        </li>
+                        <li class="breadcrumb-item" ng-if="(product != null)">
+                            <a href="#!category/{{name0}}/{{child}}/{{product}}"
+                                class="btn border-0 m-0 p-0 {{(product != null && prod.code == null)?'disabled':'text-success'}}">{{product}}</a>
+                        </li>
+                        <li class="breadcrumb-item {{(prod.code != null)?'active':''}}" ng-if="(prod.code != null)">
+                            <a href="#!category/{{name0}}/{{child}}/{{product}}/{{prod.code}}"
+                                class=" btn border-0 m-0 p-0 {{(prod.code != null)?'disabled':'text-success'}}">{{prod.code}}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="message-block" class="text-center mt-3">
+            </div>
+
+            <!-- product -->
+            <section>
+                <div id="product-detail">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <a href="#!/category/{{name0}}/{{child}}/{{product}}"><img
+                                    src="assests/srcPic/{{item.thumbnail}}" class="img-fluid mb-3"
+                                    style="height: 220px; margin: auto;" alt=""></a>
+                        </div>
+                        <div class="col-9 py-4">
+                            <h2 class="mb-4">{{item.name}}</h2>
+                            <div class="mb-4 d-flex gap-2 fw-lighter fs-5">
+                                <span>Starting at</span>
+                                <span class="text-success fw-bold">{{item.curPrice | currency:'$'}}</span>
+                                <span class="ms-auto">{{item.reviewsCount}} reviews, {{item.star}}/5<i
+                                        ng-repeat="s in star"
+                                        class="{{(s <= item.star) ? 'fa-solid fa-star' : (s - item.star > 0 && s - item.star < 1) ? 'fa-solid fa-star-half-stroke' : 'fa-regular fa-star'}}"
+                                        style="color: #ff7b00;"></i></span>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5">
+                                <a href="#" class="btn btn-outline-dark">Buyer Guide</a>
+                                <a href="#" class="btn btn-outline-dark">Price Trends</a>
+                                <a href="#" class="btn btn-outline-dark">Recent Sales</a>
+                                <a href="#" class="btn btn-outline-dark">Subcribes</a>
+                                <a href="#" class="btn btn-outline-dark">Sells this</a>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    More Infomation
+                                </button>
+                            </div>
+                        </div><!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content position-relative">
+                                    <div class="modal-header border-bottom-0 text-bg-success sticky-top rounded-0">
+                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Additional Specs
+                                        </h1>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body px-1">
+                                        <div class="container">
+                                            <div class="visually-hidden">
+                                                <h5>Carriers</h5>
+                                                <span>Compatible with 17+ carriers:</span><br>
+                                                <div class="justify-content-evenly ps-2">
+                                                    <a href="#" class="me-3 text-success">AT&T</a>
+                                                    <a href="#" class="me-3 text-success">T-Mobile</a>
+                                                    <a href="#" class="me-3 text-success">Unlocked</a>
+                                                    <a href="#" class="me-3 text-success">Verizon</a>
+                                                    <a href="#" class="me-3 text-success">C-Spire</a>
+                                                    <a href="#" class="me-3 text-success">Sprint</a>
+                                                    <a href="#" class="me-3 text-success">Unlocked Non-US</a>
+                                                    <a href="#" class="me-3 text-success">US Cellular</a>
+                                                    <a href="#" class="me-3 text-success">Boost</a>
+                                                    <a href="#" class="me-3 text-success">Customer Cellular</a>
+                                                    <a href="#" class="me-3 text-success">Cricket</a>
+                                                    <a href="#" class="me-3 text-success">Spectrum</a>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Size and Weight</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Width</td>
+                                                            <td>72mm<br>2.8 inches</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Height</td>
+                                                            <td>147mm<br>5.8 inches</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Depth</td>
+                                                            <td>7mm<br>0.3 inches</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Weight</td>
+                                                            <td>162g<br>5.2 ouches</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Screen / Display</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Screen Tech</td>
+                                                            <td>OLED</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Resolution</td>
+                                                            <td>1170x2532px</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Screen Size</td>
+                                                            <td>154 mm<br>6.1 inches</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pixels Per Inch</td>
+                                                            <td>457 ppi</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Refresh Rate</td>
+                                                            <td>60 Hz</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">Super Retina XDR display</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Cameras</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Primary</td>
+                                                            <td>12.2 MP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Resolution</td>
+                                                            <td>4032x3024px</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Aperture</td>
+                                                            <td>f/2.4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Zoom</td>
+                                                            <td>2.0X optical<br>5.0X digital</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">Dual 12MP camera system: Ultra Wide and Wide
+                                                                cameras</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Secondary</td>
+                                                            <td>12.0 MP</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Battery Changing</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Capacity</td>
+                                                            <td>2815 mAh</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Longevity</td>
+                                                            <td>13 hours</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>USB</td>
+                                                            <td>Lightning</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">Qi, MagSafe</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="d-flex align-items-baseline my-3">
+                                                <div class="hori-stripe-pattern-warm flex-fill"></div>
+                                                <h5 class="text-center mx-2 text-success">MORE SPECS</h5>
+                                                <div class="hori-stripe-pattern-warm flex-fill"></div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Processor / Chipset</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>CPU</td>
+                                                            <td>Apple A14 Bionic APL1001 / APL1W01</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CPU Cores</td>
+                                                            <td>6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GPU</td>
+                                                            <td>16-core Neural Engine</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GPU Cores</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">6-core CPU with 2 performance and 4
+                                                                efficiency
+                                                                cores</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Memory / Storage</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>RAM</td>
+                                                            <td>4.00 GB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="">Storage Options</a></td>
+                                                            <td><a href="">64 GB</a><br><a href="">128 GB</a><br><a
+                                                                    href="">256 GB</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="stripe flex-fill"></div>
+                                                    <h5 class="text-center mx-2">Color Choices</h5>
+                                                    <div class="stripe flex-fill"></div>
+                                                </div>
+                                                <table class="table align-middle rounded">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="">Color Choices</a></td>
+                                                            <td>
+                                                                <br><i class="fa-solid fa-circle shadow-sm"
+                                                                    style="color: black;"></i> Black
+                                                                <br><i class="fa-solid fa-circle shadow-sm"
+                                                                    style="color: white;"></i> White
+                                                                <br><i class="fa-solid fa-circle shadow-sm"
+                                                                    style="color: blue;"></i> Blue
+                                                                <br><i class="fa-solid fa-circle shadow-sm"
+                                                                    style="color: green;"></i> Green
+                                                                <br><i class="fa-solid fa-circle shadow-sm"
+                                                                    style="color: purple;"></i> Purple
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CPU Cores</td>
+                                                            <td>6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GPU</td>
+                                                            <td>16-core Neural Engine</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GPU Cores</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">6-core CPU with 2 performance and 4
+                                                                efficiency
+                                                                cores</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0 mt-0 pt-0 justify-content-center">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
+                                                class="fa-solid fa-xmark" style="color: #ffffff;"></i> Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="card border-0">
+
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-auto p-3 justify-content-evenly">
+
+                            <div class="col text-center">
+                                <select id="f-carrier" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedCarrier = ''" ng-model="selectedCarrier"
+                                    ng-options="c.key as c.value for c in carriers" ng-change="setTempList(item.products
+                | filter: {
+                    carrier: selectedCarrier,
+                    storage: selectedStorage,
+                    color: selectedColor,
+                    condition: selectedCondition,
+                    model: selectedModel
+                })">
+                                </select>
+                            </div>
+                            <div class="col text-center">
+                                <select id="f-color" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedColor = ''" ng-model="selectedColor"
+                                    ng-options="c.key as c.value for c in colors" ng-change="setTempList(item.products
+                | filter: {
+                    carrier: selectedCarrier,
+                    storage: selectedStorage,
+                    color: selectedColor,
+                    condition: selectedCondition,
+                    model: selectedModel
+                })">
+                                </select>
+                            </div>
+                            <div class="col text-center">
+                                <select id="f-storage" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedStorage = ''" ng-model="selectedStorage"
+                                    ng-options="c.key as c.value for c in storages" ng-change="setTempList(item.products
+                | filter: {
+                    carrier: selectedCarrier,
+                    storage: selectedStorage,
+                    color: selectedColor,
+                    condition: selectedCondition,
+                    model: selectedModel
+                })">
+                                </select>
+                            </div>
+                            <div class="col text-center">
+                                <select id="f-model" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedModel = ''" ng-model="selectedModel"
+                                    ng-options="c.key as c.value for c in models" ng-change="setTempList(item.products
+                | filter: {
+                    carrier: selectedCarrier,
+                    storage: selectedStorage,
+                    color: selectedColor,
+                    condition: selectedCondition,
+                    model: selectedModel
+                })">
+                                </select>
+                            </div>
+                            <div class="col text-center">
+                                <select id="f-condition" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedCondition = ''" ng-model="selectedCondition"
+                                    ng-options="c.key as c.value for c in conditions" ng-change="setTempList(item.products
+                | filter: {
+                    carrier: selectedCarrier,
+                    storage: selectedStorage,
+                    color: selectedColor,
+                    condition: selectedCondition,
+                    model: selectedModel
+                })">
+                                </select>
+                            </div>
+                            <div class="col text-center">
+                                <select id="price-sort" class="form-select" aria-label="Default select example"
+                                    ng-init="selectedSort = '-1'" ng-model="selectedSort">
+                                    <option value="-1">Sort By</option>
+                                    <option value="0">Price Ascending</option>
+                                    <option value="1">Price Descending</option>
+                                </select>
+                            </div>
+                            <div class="col" ng-if="selectedCarrier != ''
+                        || selectedColor != ''
+                        || selectedStorage != ''
+                        || selectedModel != ''
+                        || selectedCondition != ''">
+                                <button type="button" class="m-0 btn btn-outline-danger border-0"
+                                    ng-click="clearFilter()"><i class="fa-solid fa-xmark"></i> Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- list item -->
+            <section>
+
+                <div class="d-flex text-center gap-1 justify-content-center mt-4 visually-hidden">
+                    <span>Showing <span ng-model="startItem">{{start + 1}}</span>-<span
+                            ng-model="endItem">{{(tempList.length
+                            <= start + limItems) ? tempList.length : start + limItems}}</span> of
+                                {{tempList.length}}
+                        </span> • <span ng-bind="minPrice | currency:'$':0"></span>-<span
+                            ng-bind="maxPrice | currency:'$':0"></span>
+                        •
+                        <a href="#" class="text-success">Show All</a>
+                </div>
+
+                <div class="table-responsive" ng-if="tempList.length >= 1">
+
+                    <table class="table text-center align-middle table-hover border mt-4 rounded">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Pics</th>
+                                <th scope="col">Carrier</th>
+                                <th scope="col">Color</th>
+                                <th scope="col">Storage</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Condition</th>
+                                <th scope="col"><i class="fa-solid fa-battery-three-quarters"></i></th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Payment</th>
+                                <th scope="col">Shipping</th>
+                                <th scope="col">Code</th>
+                                <th scope="col"><i class="fa-regular fa-star"></i></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="sp in item.products
+                            | filter: {
+                                carrier: selectedCarrier,
+                                storage: selectedStorage,
+                                color: selectedColor,
+                                condition: selectedCondition,
+                                model: selectedModel
+                            }
+                            | orderBy: ((selectedSort == 0)?'price':(selectedSort == 1)?'-price':'')
+                            | limitTo:limItems:start ">
+                                <td scope="row"> {{$index + 1 + (page -1)*limItems}} </td>
+                                <th class="text-success">{{sp.price | currency:'$':0}}</th>
+                                <td><a href="#!category/{{name0}}/{{child}}/{{item.name}}/{{sp.code}}"
+                                        class="text-success"><img src="assests/srcPic/{{sp.thumbnail}}"
+                                            class="img-fluid" height="75px" alt=""></a>
+                                </td>
+                                <td>{{sp.carrier}}</td>
+                                <td>{{sp.color}}</td>
+                                <td>{{sp.storage}}</td>
+                                <td>{{sp.model}}</td>
+                                <td>{{sp.condition}}</td>
+                                <td>{{(sp.battery==null)?'-':sp.battery + '%'}}</td>
+                                <td>{{sp.location.detail}} <br>
+                                    <p class="text-secondary"> {{sp.location.general}}</p>
+                                </td>
+                                <td class="fs-4 justify-content-between"><i ng-repeat="p in sp.payment"
+                                        class="{{p}}"></i>
+                                </td>
+                                <td>Free</td>
+                                <td><a href="#!category/{{name0}}/{{child}}/{{item.name}}/{{sp.code}}"
+                                        class="text-success">{{sp.code}}</a></td>
+                                <td><i ng-show="sp.feature" class="fa-solid fa-star" style="color: #ff6f00;"></i></td>
+                                <td><button class="btn btn-outline-success" type="button" ng-click="add2cart(sp.id)"><i
+                                            class="fa-solid fa-cart-plus"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center" ng-if="tempList.length <= 0">
+                    <img src="assests/srcPic/no-products.jpg" height="550px" alt="">
+                </div>
+                <!-- {{pageList.length}} ||| -->
+
+                <div class="d-flex text-center justify-content-center align-items-center"
+                    ng-hide="pageList.length <= 1">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item {{(page == 1)? 'disabled': ''}}">
+                                <btn class="page-link" ng-click="selectPage(1)" aria-label="Previous">
+                                    <span aria-hidden="true" class="text-success">First</span>
+                                </btn>
+                            </li>
+                            <li class="page-item {{(page == 1)? 'disabled': ''}}">
+                                <btn class="page-link" ng-click="selectPage(page-1)" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa-solid fa-angles-left text-success"></i></span>
+                                </btn>
+                            </li>
+                            <!-- <li class="page-item disabled">
+                            <button class="page-link text-bg-success "> {{page}} {{getStart()}} </button>
+                        </li> -->
+                            <li class="page-item"
+                                ng-repeat="pg in pageList | limitTo:((pageList.length < limPage)?pageList.length:limPage):startPage">
+                                <button class="page-link text{{(pg==page)?'-bg':''}}-success" ng-click="selectPage(pg)">
+                                    {{pg}} </button>
+                                <!-- {{(pageList.length < limPage)}} || {{((pageList.length < limPage)?pageList.length:limPage)}} || {{startPage}} -->
+                            </li>
+                            <li class="page-item {{(page == maxPage)? 'disabled': ''}}">
+                                <btn class="page-link" ng-click="selectPage(page+1)" aria-label="Next">
+                                    <span aria-hidden="true"><i
+                                            class="fa-solid fa-angles-right text-success"></i></span>
+                                </btn>
+                            </li>
+                            <li class="page-item {{(page == maxPage)? 'disabled': ''}}">
+                                <btn class="page-link" ng-click="selectPage(maxPage)" aria-label="Next">
+                                    <span aria-hidden="true" class="text-success">Last</span>
+                                </btn>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+</div>
